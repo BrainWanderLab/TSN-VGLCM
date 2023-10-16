@@ -25,8 +25,13 @@ In addition, a multilevel 3D wavelet decomposition was performed on the original
 Reference:
 
 [1] Pichet Binette A, Gonneaud J, Vogel JW, La Joie R, Rosa-Neto P, Collins DL, et al. (2020): Morphometric network differences in ageing versus Alzheimer's disease dementia. Brain: a journal of neurology. 143:635-649.
+
 [2] Alexander-Bloch A, Giedd JN, Bullmore E (2013): Imaging structural covariance between human brain regions. Nat Rev Neurosci. 14:322-336.
+
 [3] Ding H, Zhang Y, Xie YY, Du XT, Ji Y, Lin LY, Chang ZY, Zhang B, Liang M, Yu CS, Qin W: Individualized texture similarity network in schizophrenia (Under Review) 
+
 [4] Maani R, Yang YH, Emery D, Kalra S (2016): Cerebral Degeneration in Amyotrophic Lateral Sclerosis Revealed by 3-Dimensional Texture Analysis. Frontiers in neuroscience. 10:120.
+
 [5] Ta D, Khan M, Ishaque A, Seres P, Eurich D, Yang YH, et al. (2020): Reliability of 3D texture analysis: A multicenter MRI study of the brain. J Magn Reson Imaging. 51:1200-1209.
+
 [6] Ishaque A, Mah D, Seres P, Luk C, Johnston W, Chenji S, et al. (2019): Corticospinal tract degeneration in ALS unmasked in T1-weighted images using texture analysis. Hum Brain Mapp. 40:1174-1183.
