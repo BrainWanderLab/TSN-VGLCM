@@ -1,7 +1,5 @@
 # TSN-VGLCM
 
-![Uploading image.png…]()
-
 1. Theory
  
   The structural covariance network (SCN) captures shared morphological covariance patterns between brain regions according to morphological measures derived from structural magnetic resonance imaging (sMRI) [1,2]. Texture similarity network (TSN) is the individual-level construction approach of the SCN based on the sMRI-derived voxel-wise 3D gray‐level co‐occurrence matrix (VGLCM) texture feature maps [3], which can provide detailed spatial information and dramatically diminishes the influence of insufficient areas definition on texture feature calculation. Compared with the tranditional SCN approach, the individualized TSN is independent of the sample size or priori hypotheses, which characterizes individual structural heterogeneity among the population using adequate VGLCM features.
