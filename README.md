@@ -17,8 +17,12 @@ In addition, a multilevel 3D wavelet decomposition was performed on the original
   Step 2: The standard whole brain atlas (e.g., BNA_maxprob_thr25_1.5mm.nii, 246 cerebral parcellations from Human Brainnetome Atlas) was pre-defined as the nodes of TSN for the following the individual-level network construction.
 
   Step 3: Voxel-wise GLCM texture maps were carried out using a self-developed program (e.g., batch_vox_glcm.sh) based on Matlab 2016b. A total of 180 texture feature maps was ultimately generated from the 9 typies of sMRI data (1 original and 8 wavelet-transformed brain maps) for each subject. This script contains 6 inputs as follows: (1) T1 rawdata map (corrected for bias-field); (2) the native gray matter map; (3) the native white matter map; (4) the result directory for saving texture feature maps; (5) Subject ID; (6) the full path of the package.
+  E.g.,
+  batch_vox_glcm.sh ./Subj001/mT1.nii ./Subj001/p1T1.nii ./Subj001/p2T1.nii ./result/Subj001 Subj001 ./TSN-VGLCM
 
   Step 4: TSN construction were also carried out using a self-developed program (e.g., batch_vox_glcm_matrix.sh) based on Matlab 2016b in Linux system. This script constructed the subject-level brain TSN using the pre-defined standard whole brain atlas from Step 2. The standard brain atlas was first warped into each subject's native space using the nonlinear deformation warp map (e.g., iy_*.nii) generated at Step 1. Then the feature vector of each parcellation of each subject was extracted from the 180 VGLCM maps. After that, a Pearson correlation was used to calculate the covariance coefficient of the feature vectors between each pair of areas. Then Fisher's r-to-z transformation algorithm was used to convert the covariance coefficient to approximately normally distributed, resulting in a symmetrical covariance matrix (termed TSN). This script contains 6 inputs as follows: (1) the directory for saving texture feature maps from Step 3; (2) the directory for saving T1 rawdata map and the nonlinear deformation warp map; (3) the full-path filename of the standard brain atlas; (4) the result directory for saving TSN; (5) Subject ID; (6) the full path of the package.
+  E.g.,
+  batch_vox_glcm_matrix.sh ./result/Subj001 ./Subj001 ./TSN-VGLCM/BNA_maxprob_thr25_1.5mm.nii Subj001 ./TSN-VGLCM
   
 Reference:
 
